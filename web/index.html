@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacejam 2026 - Game Jam Competition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            background-image: radial-gradient(#FFC107 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+        }
+        h1, h2, h3, .comic-font {
+            font-family: 'Archivo Black', sans-serif;
+            text-transform: uppercase;
+        }
+        .comic-border {
+            border: 4px solid #000;
+            box-shadow: 8px 8px 0px #000;
+        }
+        .yellow-bg {
+            background-color: #FFC107;
+        }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+    </style>
+</head>
+<body class="text-black">
+
+    <!-- Header / Navbar -->
+    <nav class="sticky top-0 z-50 bg-white border-b-4 border-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-3xl font-black italic tracking-tighter">
+                SPACE<span class="text-[#FFC107] stroke-black" style="-webkit-text-stroke: 1px black;">JAM</span> 2026
+            </div>
+            <div class="hidden md:flex space-x-6 font-bold">
+                <a href="#about" class="hover:text-[#FFC107]">ABOUT</a>
+                <a href="#timeline" class="hover:text-[#FFC107]">TIMELINE</a>
+                <a href="#rules" class="hover:text-[#FFC107]">RULES</a>
+                <a href="#faq" class="hover:text-[#FFC107]">FAQ</a>
+            </div>
+            <a href="#" class="yellow-bg px-6 py-2 comic-border font-bold hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                DAFTAR
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto section-padding text-center">
+        <div class="relative inline-block mb-8">
+            <div class="absolute -inset-4 yellow-bg -rotate-2 -z-10 comic-border"></div>
+            <h1 class="text-6xl md:text-8xl font-black italic mb-2 tracking-tighter">SPACEJAM</h1>
+            <p class="text-2xl font-bold bg-black text-white px-4 py-1 inline-block">RULEBOOK 2026</p>
+        </div>
+        <p class="text-xl max-w-2xl mx-auto font-medium mt-6">
+            Kompetisi GameJam tahunan yang diselenggarakan oleh <span class="font-bold">UKM GAMESPACE</span> bersama <span class="font-bold">PENS</span>.
+        </p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white border-y-4 border-black">
+        <div class="container mx-auto section-padding grid md:grid-cols-2 gap-12 items-center">
+            <div class="comic-border yellow-bg p-8">
+                <h2 class="text-4xl mb-6">Apa itu Spacejam?</h2>
+                <p class="text-lg leading-relaxed">
+                    SPACEJAM adalah wadah kreativitas, kolaborasi, dan inovasi bagi para developer game muda Indonesia. 
+                    Peserta ditantang untuk mengembangkan game dari nol dalam waktu terbatas berdasarkan tema yang akan diumumkan.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="comic-border p-4 bg-white rotate-2">
+                    <img src="https://via.placeholder.com/300x200?text=Event+1" alt="Last Year" class="w-full grayscale">
+                </div>
+                <div class="comic-border p-4 bg-white -rotate-2">
+                    <img src="https://via.placeholder.com/300x200?text=Event+2" alt="Last Year" class="w-full grayscale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="container mx-auto section-padding">
+        <h2 class="text-5xl text-center mb-16">Timeline Kegiatan</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="comic-border p-6 bg-white relative pt-12">
+                <span class="absolute top-0 left-0 yellow-bg px-4 py-1 comic-border -translate-y-1/2 translate-x-4 font-bold">25 April - 13 Mei</span>
+                <h3 class="text-2xl mb-2">Open Registration</h3>
+                <p>Pendaftaran tim dan individu dibuka.</p>
+            </div>
+            <div class="comic-border p-6 yellow-bg relative pt-12">
+                <span class="absolute top-0 left-0 bg-white px-4 py-1 comic-border -translate-y-1/2 translate-x-4 font-bold">14 Mei</span>
+                <h3 class="text-2xl mb-2">Opening & TM</h3>
+                <p>Pengumuman tema dan technical meeting via Discord.</p>
+            </div>
+            <div class="comic-border p-6 bg-white relative pt-12">
+                <span class="absolute top-0 left-0 yellow-bg px-4 py-1 comic-border -translate-y-1/2 translate-x-4 font-bold">14 - 21 Mei</span>
+                <h3 class="text-2xl mb-2">Gamejam Phase</h3>
+                <p>Waktunya membangun game impianmu!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="yellow-bg border-y-4 border-black">
+        <div class="container mx-auto section-padding">
+            <h2 class="text-5xl text-center mb-12">Syarat & Ketentuan</h2>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <div class="bg-white comic-border p-4 flex items-start space-x-4">
+                    <div class="text-2xl font-black">01</div>
+                    <p class="font-bold">Terbuka untuk Pelajar dan Umum.</p>
+                </div>
+                <div class="bg-white comic-border p-4 flex items-start space-x-4">
+                    <div class="text-2xl font-black">02</div>
+                    <p class="font-bold">Tim maksimal 4 orang (boleh individu).</p>
+                </div>
+                <div class="bg-white comic-border p-4 flex items-start space-x-4">
+                    <div class="text-2xl font-black">03</div>
+                    <p class="font-bold">Game harus sesuai tema (diumumkan saat pembukaan).</p>
+                </div>
+                <div class="bg-white comic-border p-4 flex items-start space-x-4">
+                    <div class="text-2xl font-black">04</div>
+                    <p class="font-bold">Dilarang menggunakan Generative AI untuk aset dan musik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="container mx-auto section-padding">
+        <h2 class="text-5xl text-center mb-12">FAQ</h2>
+        <div class="max-w-3xl mx-auto space-y-4">
+            <details class="group comic-border bg-white">
+                <summary class="p-6 cursor-pointer font-bold text-xl list-none flex justify-between items-center group-open:bg-black group-open:text-white">
+                    Siapa saja yang bisa ikut?
+                    <span class="transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <div class="p-6 border-t-4 border-black">
+                    <p>Spacejam 2026 terbuka untuk pelajar dan umum tanpa batasan usia maupun institusi.</p>
+                </div>
+            </details>
+            <details class="group comic-border bg-white">
+                <summary class="p-6 cursor-pointer font-bold text-xl list-none flex justify-between items-center group-open:bg-black group-open:text-white">
+                    Game engine apa yang boleh dipakai?
+                    <span class="transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <div class="p-6 border-t-4 border-black">
+                    <p>Bebas! Tidak ada ketentuan game engine tertentu. Gunakan yang paling kamu kuasai.</p>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto text-center px-4">
+            <div class="text-4xl font-black italic mb-6">SPACEJAM 2026</div>
+            <p class="mb-8">Organized by UKM GAMESPACE & PENS</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-[#FFC107]">INSTAGRAM</a>
+                <a href="#" class="hover:text-[#FFC107]">DISCORD</a>
+                <a href="#" class="hover:text-[#FFC107]">ITCH.IO</a>
+            </div>
+            <div class="mt-12 text-gray-500 text-sm">
+                &copy; 2026 Spacejam. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
